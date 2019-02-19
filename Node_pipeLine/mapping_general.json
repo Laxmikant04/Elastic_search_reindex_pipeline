@@ -1,0 +1,511 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "folding": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      },
+      "normalizer": {
+        "lowerasciinormalizer": {
+          "type": "custom",
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+      "match_all": {
+        "properties": {
+          "Final_emailStatus": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "a_city": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "a_country": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "a_state": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "a_street": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "c_city": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "c_country": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "c_postalcode": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "c_state": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "c_street": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "call_id": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "call_updated": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "campaign_ID": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "company_li_url": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "company_name": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "contact_li_url": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "contactid": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "created_on": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "datascore": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "dgs_comments": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "dgs_disposition": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "dialing_date": {
+           "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "directno_fromcall": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "email_address": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "email_fromcall": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "emp_range": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "firstname": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "function": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "job_level": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "job_title": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "lastname": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "li_industry": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "naic_code": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "parent_industry": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "parentdept": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "phone1": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "phone_direct": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "phone_fromcall": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "phone_office": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "qa_disposition": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "rev_range": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "sic_code": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "sub_dept": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "sub_industry": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "time_zone": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "updated_on": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "website": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          },
+          "work_location": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "normalizer": "lowerasciinormalizer",
+                "ignore_above": 256
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
